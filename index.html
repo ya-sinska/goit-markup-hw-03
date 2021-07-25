@@ -16,25 +16,25 @@
 
 <body>
     <!--Шапка сайту-->
-    <header>
-        <div class="container">
-            <nav>
+    <header class="header-section">
+        <div class="container nav-and-contacts">
+            <nav class="main-nav">
                 <a class="logo link" lang="en" href="./index.html"> Web<span class="black-accent">Studio</span></a>
                 <ul class="site-nav list">
-                    <li>
-                        <a class="site-nav-item current link" href="">Студия</a>
+                    <li class="site-nav-item">
+                        <a class="site-nav link current" href="">Студия</a>
                     </li>
-                    <li>
-                        <a class="site-nav-item link" href="./portfolio.html">Портфолио</a>
+                    <li class="site-nav-item">
+                        <a class="site-nav link" href="./portfolio.html">Портфолио</a>
                     </li>
-                    <li>
-                        <a class="site-nav-item link" href="">Контакты</a>
+                    <li class="site-nav-item">
+                        <a class="site-nav link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <ul class="contacts-nav list">
-                <li><a class="contacts-nav-item link" lang="en" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
-                <li><a class="contacts-nav-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="contacts-nav-item"><a class="contacts-nav link" lang="en" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
+                <li class="contacts-nav-item"><a class="contacts-nav link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>           
         </div>
  
@@ -43,49 +43,55 @@
     <main>
         <!--Послуги компанії-->
         <section class="hero-section">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-btn" type="button">Заказать услугу</button>
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button class="hero-btn" type="button">Заказать услугу</button>
         </section>
         <!--Переваги компанії-->
         <section class="benefits-section">
-            <h2 class="visually-hidden">Особенности компании</h2>
-            <ul class="list">
-                <li>
-                    <h3 class="benefits-title">Внимание к деталям</h3>
-                    <p class="benefits-description">Идейные соображения, а также начало повседневной работы по
-                        формированию позиции.</p>
-                </li>
-                <li>
-                    <h3 class="benefits-title">Пунктуальность</h3>
-                    <p class="benefits-description">Задача организации, в особенности же рамки и место обучения
-                        кадров влечет за собой.</p>
-                </li>
-                <li>
-                    <h3 class="benefits-title">Планирование</h3>
-                    <p class="benefits-description">Равным образом консультация с широким активом в значительной
-                        степени обуславливает.</p>
-                </li>
-                <li>
-                    <h3 class="benefits-title">Современные технологии</h3>
-                    <p class="benefits-description">Значимость этих проблем настолько очевидна, что реализация
-                        плановых заданий.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="visually-hidden">Особенности компании</h2>
+                <ul class="benefits list">
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">Внимание к деталям</h3>
+                        <p class="benefits-description">Идейные соображения, а также начало повседневной работы по
+                            формированию позиции.</p>
+                    </li>
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">Пунктуальность</h3>
+                        <p class="benefits-description">Задача организации, в особенности же рамки и место обучения
+                            кадров влечет за собой.</p>
+                    </li>
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">Планирование</h3>
+                        <p class="benefits-description">Равным образом консультация с широким активом в значительной
+                            степени обуславливает.</p>
+                    </li>
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">Современные технологии</h3>
+                        <p class="benefits-description">Значимость этих проблем настолько очевидна, что реализация
+                            плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
+ 
         </section>
         <!--Чим займається компанія-->
         <section class="work-section">
-            <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="list">
-                <li>
-                    <img src="./images/box-1.jpg" alt="разроботка десктопных приложений" width="370" height="294" >
-                </li>
-                <li>
-                    <img src="./images/box-2.jpg" alt="разроботка мобильных приложений" width="370" height="294">
-                </li>
-                <li>
-                    <img src="./images/box-3.jpg" alt="работа дизайнера" width="370" height="294">
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="section-title">Чем мы занимаемся</h2>
+                <ul class="image list">
+                    <li>
+                        <img src="./images/box-1.jpg" alt="разроботка десктопных приложений" width="370" height="294" >
+                    </li>
+                    <li>
+                        <img src="./images/box-2.jpg" alt="разроботка мобильных приложений" width="370" height="294">
+                    </li>
+                    <li>
+                        <img src="./images/box-3.jpg" alt="работа дизайнера" width="370" height="294">
+                    </li>
+                </ul>
+            </div>
+
         </section>
         <!-- Картки членів команди -->
         <section class="representation-section">

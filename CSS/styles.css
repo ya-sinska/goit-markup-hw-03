@@ -14,20 +14,30 @@
 }
 
 /* Класи утиліти */
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
 .link {
   text-decoration: none;
 }
 .list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
   outline: 2px solid green;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Забираємо заголовки секцій */
 .visually-hidden {
@@ -51,6 +61,20 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
+/* Шапка сайту */
+.header-section{
+  max-width: 1600px;
+  border-bottom: 1px solid #ECECEC
+}
+.nav-and-contacts{
+  display: flex;
+  align-items: center;
+
+}
+.main-nav{
+  display: flex;
+  align-items: center;
+}
 /* Логотип */
 .logo {
   color: var(--accent-text-color);
@@ -59,6 +83,11 @@ body {
   font-weight: 700px;
   font-size: 26px;
   line-height: 1.19;
+
+  display: block;
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .black-accent {
   color: var(--dark-color);
@@ -74,30 +103,56 @@ body {
   font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.site-nav-item {
-  color: var(--secondary-text-color);
-}
-.current {
-  color: var(--accent-text-color);
+
+  display: flex;
 }
 
-.site-nav-item:hover,
-.site-nav-item:focus {
+.site-nav-item:not(:last-child){
+  margin-right: 50px;
+}
+.site-nav.link {
+  color: var(--secondary-text-color);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+
+.site-nav.link:hover,
+.site-nav.link:focus {
+  color: var(--accent-text-color);
+}
+.site-nav.link.current {
   color: var(--accent-text-color);
 }
 /* Секция контактів */
-.contacts-nav-item {
-  color: inherit;
+.contacts-nav{
+  margin-left: auto;
 }
-.contacts-nav-item:hover,
-.contacts-nav-item:focus {
+.contacts-nav-item:not(:last-child){
+  margin-right: 50px;
+}
+.contacts-nav.link {
+  color: inherit;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts-nav.link:hover,
+.contacts-nav.link:focus {
   color: var(--accent-text-color);
 }
+
 /* Герой */
 .hero-section {
   background-color: var(--background-color-footer);
   text-align: center;
+
+  max-width: 1600px;
+  padding: 200px 452px;
+  margin-bottom: 94px;
+  
 }
 .hero-title {
   color: var(--light-color);
@@ -108,6 +163,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
+  width: 696px;
 }
 .hero-btn {
   color: var(--light-color);
@@ -122,10 +180,10 @@ body {
   cursor: pointer;
 
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: 0;
   padding: 10px 32px;
   min-width: 200px;
-  /* text-align: center; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -133,6 +191,20 @@ body {
   
 }
 /* Cекція переваг компанії */
+.benefits-section{
+  max-width: 1600px;
+  margin-bottom: 94px;
+}
+.benefits.list{
+  display: flex;
+
+}
+.benefits-item {
+  width: 270px;
+}
+.benefits-item:not(:last-child){
+  margin-right: 30px;
+}
 .benefits-title {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -140,6 +212,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .benefits-description {
   font-size: 14px;
@@ -148,6 +222,11 @@ body {
 }
 
 /*Чим займається компанія */
+.work-section {
+max-width: 1600px;
+margin-bottom: 94px;
+}
+
 .section-title {
   color: var(--secondary-text-color);
 
@@ -156,6 +235,12 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+.image.list {
+  display: flex;
+  justify-content: space-between;
 }
 /*   Представлення команди */
 .representation-section {
