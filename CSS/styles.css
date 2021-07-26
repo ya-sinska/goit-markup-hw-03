@@ -80,17 +80,18 @@ body {
   color: var(--accent-text-color);
 
   font-family: Raleway, sans-serif;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 
   display: block;
   margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  /* margin-top: 24px; */
+  /* margin-bottom: 25px; */
 }
 .black-accent {
   color: var(--dark-color);
+  
 }
 .white-accent {
   color: var(--light-color);
@@ -150,8 +151,7 @@ body {
   text-align: center;
 
   max-width: 1600px;
-  padding: 200px 452px;
-  margin-bottom: 94px;
+  padding: 200px 200px;
   
 }
 .hero-title {
@@ -164,12 +164,18 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
   width: 696px;
 }
 .hero-btn {
   color: var(--light-color);
   background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  
 
   font-family: inherit;
   font-weight: 700;
@@ -179,11 +185,10 @@ body {
 
   cursor: pointer;
 
-  border-radius: 4px;
-  border: 0;
+
   padding: 10px 32px;
   min-width: 200px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ 
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -193,11 +198,15 @@ body {
 /* Cекція переваг компанії */
 .benefits-section{
   max-width: 1600px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .benefits.list{
   display: flex;
-
+ 
+  /* height: 101px; */
+  margin-left: auto;
+  margin-right: auto;
 }
 .benefits-item {
   width: 270px;
@@ -224,7 +233,7 @@ body {
 /*Чим займається компанія */
 .work-section {
 max-width: 1600px;
-margin-bottom: 94px;
+padding-bottom: 94px;
 }
 
 .section-title {
@@ -238,26 +247,53 @@ margin-bottom: 94px;
 
   margin-bottom: 50px;
 }
-.image.list {
+.image.list{
   display: flex;
-  justify-content: space-between;
 }
+.image-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*   Представлення команди */
 .representation-section {
   background-color: var(--background-color-section);
+  max-width: 1600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.representation-cards {
+.cards-list{
+  display: flex;
+  flex-basis: calc((100%-4*30)/4);
+  padding: 0;
+  margin: 0;
+}
+.representation-card {
   background-color: var(--light-color);
   font-size: var(--secondary-font-size);
   line-height: 1.19;
   letter-spacing: 0.03em;
+
 }
+.representation-card:not(:last-child) {
+  margin-right: 30px;
+}
+.image-card{
+  margin-bottom: 30px;
+}
+
 .representation-cards-title {
   color: var(--secondary-text-color);
   font-weight: 500;
+  text-align: center;
+
+  margin-bottom: 10px;
+
 }
 .representation-cards-subtitle {
   color: var(--primary-text-color);
+  text-align: center;
+
+  margin-bottom: 30px;
 }
 
 /* Футер */
