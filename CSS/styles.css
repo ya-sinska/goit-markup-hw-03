@@ -53,6 +53,10 @@ img{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 body {
   color: var(--primary-text-color);
@@ -63,7 +67,6 @@ body {
 }
 /* Шапка сайту */
 .header-section{
-  max-width: 1600px;
   border-bottom: 1px solid #ECECEC
 }
 .nav-and-contacts{
@@ -86,8 +89,8 @@ body {
 
   display: block;
   margin-right: 93px;
-  /* margin-top: 24px; */
-  /* margin-bottom: 25px; */
+  width: 145px;
+  height: 31px;
 }
 .black-accent {
   color: var(--dark-color);
@@ -106,6 +109,7 @@ body {
   letter-spacing: 0.02em;
 
   display: flex;
+  align-items: center;
 }
 
 .site-nav-item:not(:last-child){
@@ -118,8 +122,6 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-
 .site-nav.link:hover,
 .site-nav.link:focus {
   color: var(--accent-text-color);
@@ -151,7 +153,10 @@ body {
   text-align: center;
 
   max-width: 1600px;
-  padding: 200px 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 .hero-title {
@@ -172,7 +177,7 @@ body {
 .hero-btn {
   color: var(--light-color);
   background-color: var(--accent-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border: 0;
   border-radius: 4px;
   
@@ -197,16 +202,13 @@ body {
 }
 /* Cекція переваг компанії */
 .benefits-section{
-  max-width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .benefits.list{
   display: flex;
  
-  /* height: 101px; */
-  margin-left: auto;
-  margin-right: auto;
+  /* min-height: 101px; */
 }
 .benefits-item {
   width: 270px;
@@ -232,7 +234,6 @@ body {
 
 /*Чим займається компанія */
 .work-section {
-max-width: 1600px;
 padding-bottom: 94px;
 }
 
@@ -257,13 +258,12 @@ padding-bottom: 94px;
 /*   Представлення команди */
 .representation-section {
   background-color: var(--background-color-section);
-  max-width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
+  
 }
 .cards-list{
   display: flex;
-  flex-basis: calc((100%-4*30)/4);
   padding: 0;
   margin: 0;
 }
@@ -272,6 +272,10 @@ padding-bottom: 94px;
   font-size: var(--secondary-font-size);
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  width: 270px;
+  padding-bottom: 30px;
+
 
 }
 .representation-card:not(:last-child) {
@@ -292,22 +296,29 @@ padding-bottom: 94px;
 .representation-cards-subtitle {
   color: var(--primary-text-color);
   text-align: center;
-
-  margin-bottom: 30px;
 }
 
 /* Футер */
 .footer-section {
   background-color: var(--background-color-footer);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .adress-section {
   font-style: normal;
+  
+  display: block;
+  margin-top: 20px;
+  width: 231px;
 }
 .adress-text {
   color: var(--light-color);
   font-size: var(--primary-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 .adress-mail,
 .adress-phone {
@@ -317,6 +328,10 @@ padding-bottom: 94px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.adress-item:not(:last-child) {
+ margin-bottom: 9px;
+}
+ 
 .adress-mail:focus,
 .adress-mail:hover,
 .adress-phone:hover,
@@ -325,9 +340,20 @@ padding-bottom: 94px;
 }
 /* Портфолио */
 
+/* Кнопки */
+.button.list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
 .button-item {
   background-color: var(--background-color-section);
   color: var(--secondary-text-color);
+  border: 0;
+  border-radius: 4px;
+
+  padding: 6px 22px;
 
   font-family: inherit;
   font-weight: 500;
@@ -348,7 +374,31 @@ padding-bottom: 94px;
   background-color: var(--accent-text-color);
   color: var(--light-color);
 }
+.list-item:not(:last-child) {
+margin-right: 8px;
+}
 
+/* Карточки */
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-item{
+ width: calc(100%-60px)/3;
+ margin-right: 30px;
+ margin-bottom: 30px;
+
+ border-bottom: 1px solid #EEEEEE;;
+}
+.card-item:nth-child(3n){
+  margin-right: 0;
+}
+.card-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+.card-text{
+  padding: 20px 24px;
+}
 .cards-section-title {
   color: var(--secondary-text-color);
 
@@ -356,6 +406,8 @@ padding-bottom: 94px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 .cards-section-description {
   font-size: 16px;
